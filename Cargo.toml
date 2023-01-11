@@ -1,0 +1,11 @@
+[package]
+name = "canvas-api"
+version = "0.1.0"
+authors = ["OverHash"]
+edition = "2021"
+description = "An implementation of the Instructure Canvas API"
+repository = "https://github.com/OverHash/canvas-api"
+license = "MIT OR Apache-2.0"
+keywords = ["Canvas", "Instructure", "API"]
+
+[dependencies]
