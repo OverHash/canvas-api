@@ -1,14 +1,9 @@
-pub fn add(left: usize, right: usize) -> usize {
-    left + right
-}
+mod calendar;
+mod canvas_client;
+mod error;
 
-#[cfg(test)]
-mod tests {
-    use super::*;
+pub use canvas_client::CanvasClient;
+pub use error::Error;
 
-    #[test]
-    fn it_works() {
-        let result = add(2, 2);
-        assert_eq!(result, 4);
-    }
-}
+// api extensions
+pub use calendar::{AccountCalendar, CalendarExt};

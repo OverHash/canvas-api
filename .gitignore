@@ -1,2 +1,9 @@
+# editor specific
+.vscode/
+
+# env keys
+.env
+
+# rust specific
 /target
 /Cargo.lock
