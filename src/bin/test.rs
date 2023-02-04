@@ -14,5 +14,5 @@ async fn main() {
         .build()
         .expect("Failed to create canvas client");
 
-    println!("{:?}", client.account_calendars(None).await);
+    println!("{:?}", client.all_calendars().await);
 }
