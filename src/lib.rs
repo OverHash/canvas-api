@@ -1,9 +1,9 @@
-mod calendar;
 mod canvas_client;
 mod error;
+pub mod extensions;
 
 pub use canvas_client::CanvasClient;
 pub use error::Error;
 
 // api extensions
-pub use calendar::{AccountCalendar, CalendarExt};
+pub use extensions::{account_domains::AccountDomainsExt, calendar::CalendarExt};
