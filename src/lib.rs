@@ -8,5 +8,5 @@ pub use error::Error;
 // api extensions
 pub use extensions::{
     account_domains::AccountDomainsExt, account_notifications::AccountNotificationsExt,
-    calendar::CalendarExt,
+    account_reports::AccountReportsExt, calendar::CalendarExt,
 };
