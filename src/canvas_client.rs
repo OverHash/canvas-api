@@ -40,6 +40,14 @@ impl CanvasClient {
     pub(crate) fn make_put(&self, path: &str) -> RequestBuilder {
         self.http_client.put(format!("{}/{path}", self.api_url))
     }
+
+    pub(crate) fn make_delete(&self, path: &str) -> RequestBuilder {
+        self.http_client.delete(format!("{}/{path}", self.api_url))
+    }
+
+    pub(crate) fn make_post(&self, path: &str) -> RequestBuilder {
+        self.http_client.post(format!("{}/{path}", self.api_url))
+    }
 }
 
 impl CanvasClientBuilder {
